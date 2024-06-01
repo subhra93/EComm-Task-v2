@@ -53,6 +53,7 @@ export class HomeComponent implements OnInit {
   itemPrice: any[];
    iPrice : Number = 0;
   // category
+  bannerData: any = [];
 
   constructor(public data   :SharedDataService,
               public route  :ActivatedRoute,
@@ -60,9 +61,11 @@ export class HomeComponent implements OnInit {
               public api    :HttpService) { }
 
   ngOnInit(): void {
-
+this.getBannerData();
+this.data.loadingClass = 'loadBG d-block';
     this.api.post('FETCH_CATEGORY_DETAILS',{}).subscribe(res => { //Get Category details
       this.categoryDatas = res.response;
+      this.data.loadingClass = 'loadBG d-none';
     });
 
     this.api.get('FETCH_FRESH_ARRIVALS').subscribe(res => { //Get Category details
@@ -101,6 +104,12 @@ export class HomeComponent implements OnInit {
     this.freshArrivals = this.freshArrivalCategoryObj[event.target.value]
   }
 
-
+  getBannerData() {
+    this.api.get('FETCH_BANNERCATEGORY_DETAILS').subscribe(res => { //Get Category details
+      this.bannerData = res.response;
+      console.log(this.bannerData)
+    });
+    console.log(this.bannerData)
+  }
 
 }

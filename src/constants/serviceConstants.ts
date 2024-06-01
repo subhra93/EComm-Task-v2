@@ -6,6 +6,7 @@ export class ServiceConstants {
 }
 
 export class APIUrls {
+  public static FETCH_BANNERCATEGORY_DETAILS     = ServiceConstants.DOMAIN + '/api/MaficDashboard/getCategory';
   public static FETCH_CATEGORY_DETAILS           = ServiceConstants.DOMAIN + '/api/Mafic/getProductCategoryCount';
   public static FETCH_PRODUCT_LIST               = ServiceConstants.DOMAIN + '/api/MaficDashboard/getProductData';
   public static FETCH_PRODUCT_LIST_CATEGORY      = ServiceConstants.DOMAIN + '/api/Mafic/getAllCategoryProduct';
