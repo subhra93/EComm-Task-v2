@@ -1,0 +1,54 @@
+<footer class="footer_dark mobile-view">
+<ul>
+    <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+    <li><i class="fa fa-bars" aria-hidden="true"></i></li>
+    <li><a [routerLink]="['/cart']"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+    <li><i class="fa fa-suitcase" aria-hidden="true"></i></li>
+    <li><a style="background-color: white;" [routerLink]="['/profile']"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+    </ul>
+</footer>
+
+<footer class="desktop-view">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="assets/images/logo_dark.png" alt="logo_dark" style="margin-left: -30px; margin-bottom: 15px;" />
+                <p>There are many variations of passages of Lorem Ipsum available</p>
+                <div class="green-block">
+                    <span class="green-dot"></span>
+                    <span class="green-dot"></span>
+                    <span class="green-dot"></span>
+                    <span class="green-dot"></span>
+                    <span class="green-dot"></span>
+                    <span class="green-dot"></span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Useful Links</h5>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Affiliate</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>My Account</h5>
+                <ul>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Discount</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Affiliate</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container text-center">
+            Copyright © {{curDate}} MAFIC. All right reserved.
+        </div>
+    </div>
+</footer>
+

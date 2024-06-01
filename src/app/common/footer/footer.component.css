@@ -1,0 +1,36 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.footer_dark{ border:2px solid #0D6D70; border-radius: 30px 30px 0 0; background: #fff; border-bottom: none; position: fixed; bottom: 0; width: 100%; z-index: 999;}
+.footer_dark ul{ padding: 0; margin: 0; text-align: center;}
+.footer_dark ul li{ list-style: none; padding: 0; margin: 0; display: inline-block; margin: 15px 25px; color: #E3A857; font-size: 1.3rem; }
+.footer_dark ul li a{ color:#E3A857;}
+
+.desktop-view{ background: #F5F5DC; padding: 50px 0 0;}
+.desktop-view p{color: #333;}
+.green-block{ display: inline-block; width: 100%;}
+.green-block .green-dot{ margin-right: 10px; width: 15px; height: 15px; border-radius: 50%; background: #8bc540; display: inline-block;}
+.footer-bottom{ margin-top: 5px; background: #000; font-size: 17px; font-weight: 600; color: #fff; font-family: "Merriweather"; line-height: 21px; }
+.footer-bottom .container{border-top:1px solid #aaa; padding: 20px 0; font-size: 15px; }
+.desktop-view h5{ font-weight: 600; color: #000; font-size: 17px;}
+.desktop-view ul{ padding: 0; margin-left: 15px;}
+.desktop-view ul li{ list-style: none; line-height: 2em;}
+.desktop-view ul li a{ color: #333; text-decoration: none;}
+
+footer.desktop-view .col-md-3{ display: flex; }
+footer.desktop-view .col-md-3 span.footer-icon{ margin-right: 18px;}
+footer.desktop-view .col-md-3 h5{font-size: 19px; font-weight: 700; color: #0D6D70; font-family: "Merriweather"; line-height: 26px;}
+.desktop-view .privacy-txt h5{font-size: 15px; font-weight: 600; color: #0D6D70; font-family: "Merriweather"; line-height: 21px;}
+
+@media only screen and (min-width: 767px){
+    .mobile-view{ display: none;}
+}
+@media only screen and (max-width: 767px){
+    .desktop-view{ display: none;}
+    footer.desktop-view .col-md-3 h5{ font-size: 15px; }
+}
+
+@media only screen and (max-width: 1200px){
+    footer.desktop-view .col-md-3 h5{ font-size: 15px; }
+}

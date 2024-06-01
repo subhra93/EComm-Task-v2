@@ -1,0 +1,70 @@
+.pos {
+    top: -38px;
+    float: right;
+    position: relative;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.invoiceTable table {
+    width: 100%;
+    border: 1px solid black;
+    font-size: 12px;
+}
+
+.invoiceTable table th {
+    background-color: #b5b2b2;
+    border: 1px solid black;
+}
+
+.invoiceTable table td {
+    border: 1px solid black;
+}
+
+.invoiceTable table .bold {
+    font-weight: 800;
+}
+
+#carouselExampleCaptions .carousel-inner{ border: none;}
+.form-login .form-control{ background: none; border: none;}
+.vdetails a{ padding: 4px 10px; color: #fff; background: green; }
+.bread{ align-items: center; justify-content: center; }
+
+.cart-table td h6.product-name {
+    margin: 0;
+    font-size: 14px;
+}
+.cart_product img {
+    border-image: none;
+    border-radius: 3px;
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    height: 90px;
+    margin: 0 15px 0 0;
+    object-fit: scale-down;
+    width: 73px;
+    padding: 3px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+.cart-table td {
+    vertical-align: middle;
+}
+.order-status h3{ font-size: 1.4rem; }
+.f-14 { font-size: 14px; font-weight: 700; }
+.cart-table td h6.product-name {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+.cart-table td h6.product-name a{ color: #f00; }
+
+
+@media only screen and (max-width: 767px){
+
+    .cart_summary{ width: 500px; }
+    .mb-4{ margin-bottom: .8rem !important; }
+
+}

@@ -1,0 +1,85 @@
+<div class="section small_pb category-details-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="heading_tab_header">
+                    <div class="heading_s2">
+                        <h2>Product Listing</h2>
+                    </div>
+                    <!-- <div class="tab-style2">
+                       
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-3" *ngFor="let key of productList" style="margin-bottom: 15px;">
+                <div class="item fix-width-new-arrival">
+                    <!-- <div *ngIf="this.resCode == 814"
+                        style="text-align: center;font-size: 18px;font-weight: 700;font-style: italic;">
+                        No products are available in this category
+                    </div> -->
+                    <div *ngIf="key.id != undefined" class="product">
+                        <a href="{{'product-details/' + key.id }}">
+                            <div class="product_img prod">
+                                <a href="{{'product-details/' + key.id }}">
+                                    <img src="{{key.images}}" alt="product_img1">
+                                </a>
+                                <!-- <div class="product_action_box">
+                                  <ul class="list_none pr_action_btn">
+                                      <li class="add-to-cart"><a (click)="data.addToCart(key.id)">
+                                        <i class="fas fa-cart-plus"></i> </a></li>
+                                      <li><a (click)="data.addWishList(key.id)" ><i class="fas fa-heart"></i></a></li>
+                                  </ul>
+                              </div> -->
+                            </div>
+                            <div class="product_info">
+                                <h6 class="product_title">
+                                    {{key.name}}</h6>
+                                <div class="product_price" *ngIf="key.discount!=0">
+                                    <span class="price">&#8377;{{key.price - ((key.discount*key.price)/100.0) |
+                                        number:'1.0-0'}}</span>
+
+                                </div>
+                                <div class="product_price" *ngIf="key.discount==0">
+                                    <span class="price">&#8377;{{key.price}}</span>&nbsp;
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="top-services mb-5">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <h4>Free Delivery</h4>
+                    <p class="card-text">There are many variations of passages of Lorem Ipsum available</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <h4>30 Day Return</h4>
+                    <p class="card-text">There are many variations of passages of Lorem Ipsum available</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <h4>24/7 Support</h4>
+                    <p class="card-text">There are many variations of passages of Lorem Ipsum available</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

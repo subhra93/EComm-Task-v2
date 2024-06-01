@@ -1,0 +1,45 @@
+<footer class="footer_dark mobile-view">
+<ul>
+    <li><a [routerLink]="['/']"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+    <li><a [routerLink]="['/cart']"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+    <li><a [routerLink]="['/wish-list']"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+    <li><a style="background-color: white;" [routerLink]="['/profile']"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+    </ul>
+</footer>
+
+<footer class="desktop-view">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="assets/images/ftrlogo.png" alt="logo_dark" style="margin-left: 0; margin-bottom: 15px;" />
+                
+                <!-- <div class="green-block">
+                    <span class="green-dot"></span>
+                    <span class="green-dot"></span>
+                    <span class="green-dot"></span>
+                    <span class="green-dot"></span>
+                    <span class="green-dot"></span>
+                    <span class="green-dot"></span>
+                </div> -->
+            </div>
+            <div class="col-md-3">
+                <span class="footer-icon"><img src="assets/images/footer-phone-icon.png"></span> <h5>+91 9289404690</h5>
+            </div>
+            <div class="col-md-3">
+                <span class="footer-icon"><img src="assets/images/footer-mail-icon.png"></span> <h5>info@themafic.in</h5>
+            </div>
+            <div class="col-md-3">  
+                <span class="footer-icon"><img src="assets/images/address-icon.png"></span> <h5>A-3/1 Mayapuri Phase-1<br />Near FCI Godown<br />New Delhi-110064</h5>
+            </div>
+            <div class="col-md-12 text-center privacy-txt">
+                <h5><a style="cursor: pointer;" (click)="openPrivacyPolicy()">PRIVACY POLICY</a> - <a style="cursor: pointer;" (click)="openTermsOfService()">TERMS OF SERVICE</a> - <a style="cursor: pointer;" (click)="openRefundPolicy()">REFUND POLICY</a></h5>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container text-center">
+            Copyright {{curDate}} themaficartkart.
+        </div>
+    </div>
+</footer>
+

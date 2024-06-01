@@ -1,0 +1,236 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+.categories_box{ position: relative;}
+.categories_box--image {
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid #E3A857;
+    position: relative;
+    height: 240px;
+}
+.box-img-overlay{ background: rgba(0,0,0,.6); position: absolute; left: 0; top: 0; width: 100%; height:100%; line-height: 99px; text-align: center; color: #E3A857; font-size: 12px; font-family: "Merriweather";}
+.owl-carousel .owl-item .categories_box--image img{ min-height: 99px;}
+
+.categories_box--image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+.categories_box:hover .cate-custom1-info{ display: block; transition: all .5s ease; z-index: 999; height: 100%;}
+.cate-custom1-info{ position: absolute; left: 0; right: 0; top:0; bottom: 0; width: 100%; background: rgba(0,0,0,.65); /*display: none;*/ text-align: center; color: #E3A857; border-radius: 10px; cursor: pointer; }
+
+.cate-custom1-info h3{color: #E3A857; margin-top: 35%; }
+.custom-icon-left {
+    position: relative;
+    background: url('../../../assets/images/chevron-left.svg') no-repeat center center;
+    width: 40px;
+    height: 40px;
+    background-size: 22px;
+}
+
+.custom-icon-left:hover {
+    background: url('../../../assets/images/chevron-left-white.svg') no-repeat center center;
+    background-size: 22px;
+}
+
+.custom-icon-right {
+    position: relative;
+    background: url('../../../assets/images/chevron-right.svg') no-repeat center center;
+    width: 40px;
+    height: 40px;
+    background-size: 22px;
+}
+
+.custom-icon-right:hover {
+    background: url('../../../assets/images/chevron-right-white.svg') no-repeat center center;
+    background-size: 22px;
+}
+
+
+/* .fix-width-new-arrival{
+    width: 250px;
+} */
+
+.new-arrival-carousel .owl-item {
+    max-width: 20%;
+}
+
+.carousel-caption1 {
+    position: absolute;
+    right: 5%;
+    bottom: 18%;
+    left: 8%;
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
+    color: #292B2C;
+    margin-bottom: 12%;
+    text-align: left;
+}
+.product .product_title, .product .product_title a{ color: #000;}
+
+.mat-typography h6{ font-size: 14px;}
+
+.product_info h6.product_title{ min-height: 38px; font-weight: 400; margin-bottom: 0;}
+
+
+.top-services h4{ font-weight: 500; margin-bottom: 5px;}
+.top-services .card{ padding: 0 25px; border:none; border-right: 1px solid #ccc;}
+.top-services .row div.col-md-4:last-child .card{ border-right: none;}
+
+.heading_s2 h2{ font-family: 'Merriweather'; margin-bottom: 15px;}
+
+.product_info p{ font-size: 10px;}
+.product-rating{ font-size: 8px;}
+.product_price .price{ color:#0D6D70; font-size: 15px;}
+
+.latest-products ul{ display: flex;
+    flex-wrap: wrap;
+    justify-content: left; padding: 0; margin: 0;}
+.latest-products ul li{ list-style: none; padding: 0; margin: 0 1% 21px 0; width: 24%; border: 1px solid #E3A857; border-radius: 15px; font-size: 16px; color:#0F0F0F; font-family: 'Merriweather';}
+.latest-products ul li img{border: 1px solid #E3A857; border-radius: 15px; width: 100%;}
+.latest-products ul li:nth-child(5n){ margin-right: 0;}
+.latest-products ul li .product-info{ padding: 15px 7px; text-align: center;}
+.latest-products ul li .product-info .price{ font-size: 14px; font-weight: 700; color: #000; font-family: 'Open Sans', sans-serif; display: block; text-align: center; margin-top: 30px; margin-bottom: 10px;} 
+.product_img { text-align: center;}
+.product_img img{ height: 80px; }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 767px){
+    .container.home-web{ width: 100%; max-width: 100%; padding: 0;}
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .fashion-text {
+        font-size: 30px;
+    }
+    .new-arrivals-dropdown--wrapper {
+        width: 175px;
+        background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 100% 50%;
+    }
+    .new-arrival-margin {
+        margin-left: 0px !important;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .fashion-text {
+        font-size: 35px;
+    }
+    .new-arrivals-dropdown--wrapper {
+        width: 200px;
+        background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 100% 50%;
+    }
+    /* .new-arrival-margin {
+        margin-left: -5px !important;
+    } */
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .fashion-text {
+        font-size: 50px;
+    }
+    .new-arrivals-dropdown--wrapper {
+        width: 225px;
+        background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 100% 50%;
+    }
+    /* .new-arrival-margin {
+        margin-left: -75px !important;
+    } */
+
+    .product-list-info{ width: 59%;}
+    .heading_s2 h2{ margin-bottom: 25px; font-family: "Merriweather";}
+    .heading_s2 h2 a.btn{ font-weight: 700; margin-top: 8px;}
+    .product_img{ width: 85px; padding: 0;}
+    .product_info{ width: 65%; padding: 5px 5px 5px 0;}
+    .product-dtls{ border:1px solid #E3A857; border-radius: 5px; margin-bottom: 15px; padding-top: 0; padding-bottom: 0; display: flow-root; overflow: hidden; height: 82px;}
+    .product-dtls h6 a,
+    .product_price .price{ font-family: 'Merriweather', serif;}
+    .btn-line-fill::before, .btn-line-fill::after{ content:none;}
+    .carousel-control-next, .carousel-control-prev{ width: 30px; height: 30px;}
+    .carousel.slide{ display: inline-block;}
+    .carousel-control-prev-icon, .carousel-control-next-icon{ background-size: 50%;}
+    .product-list-info{ float: left; width: 60%;}
+    .product-list-info p{ display: block; margin-bottom: 0; width: 100%;}
+    .product_img{ width: 25%; float: left; margin-right: 3%; background: #fff; border-radius: 0;}
+    .product_info{ text-align: left; float: right; width: 72%; padding: 5px 15px 15px 0;}
+    .product_info p{ float: left; color: #0D6D70;}
+    .product_price{ text-align: right; float:right; margin-top: 15px; margin-bottom: 0;}
+    .product-rating{ color:#E3A857; }
+
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .fashion-text,
+    .mat-typography h2.fashion-text {
+        font-size: 60px;
+        color: #000;
+        font-weight: 600;
+        font-family: "Roboto";
+    }
+    .container.home-web .carousel-caption1 h5{ font-size: 17px; margin-bottom: 30px;}
+    .new-arrivals-dropdown--wrapper {
+        width: 250px;
+        background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 100% 50%;
+    }
+    /* .new-arrival-margin {
+        margin-left: -78px !important;
+    } */
+}
+
+@media only screen and (max-width: 767px){
+    .top-services{ display: none;}
+    .container.home-web .carousel-caption1{ bottom: 0; top:10%;}
+    .mat-typography h2{ font-size: 18px;}
+    .categories_box h3{ font-size: 12px; font-family: "Merriweather";}
+    .cate-custom1-info h3{ margin-top: 38%;}
+    .latest-products ul li{ width: 46%; margin: 2%;}
+    .categories_box--image{ height: 110px; }
+    .nav_style5 .owl-theme .owl-nav .owl-prev,
+.nav_style5 .owl-theme .owl-nav .owl-next{ opacity: 1;}
+.product_info h6.product_title{ white-space: normal; }
+}
+@media only screen and (max-width: 600px) {
+    .pro-sec{ padding-bottom: 50px; }
+    .cate-custom1-info{ display: block; }
+    .product_img img{ width: 100%; height: 80px; }
+    .fashion-text {
+        font-size: 25px;
+    }
+    .new-arrivals-dropdown--wrapper {
+        width: 150px;
+        background: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+) no-repeat 100% 50%;
+        padding: 0 5px;
+        font-size: .9rem;
+        height: 30px;
+    }
+    .new-arrival-margin {
+        margin-left: 0px
+    }
+    .product-list-info{ width: 36%;}
+    .heading_s2 h2{ margin-bottom: 10px; font-family: "Merriweather";}
+    .heading_s2 h2 a.btn{ font-weight: 700; margin-top: 8px;}
+    .product_img{ width:85px; padding: 0; float: left ;}
+    .product_info{ padding: 5px; }
+}
+
+@media screen and (max-width:575px) {
+    .fix-width-new-arrival {
+        width: 100%;
+    }
+}
